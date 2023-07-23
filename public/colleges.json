@@ -1,0 +1,39 @@
+[
+    {
+        "college_id": "1",
+        "name": "Massachusetts Institute of Technology",
+        "admissionDates": [
+            "2023-08-15",
+            "2023-09-10"
+        ],
+        "events": [
+            "Orientation Day",
+            "Annual Fest"
+        ],
+        "researchHistory": "Founded in 1920",
+        "sports": [
+            "Chess",
+            "Basketball"
+        ],
+        "image": "mit.jpg",
+        "details": {
+            "description": "MIT is a prestigious institution...",
+            "location": "Boston, Massachusetts",
+            "facilities": [
+                "Library",
+                "Labs",
+                "Sports Complex"
+            ],
+            "courses": [
+                "Computer Science",
+                "Engineering",
+                "Biology"
+            ],
+            "gallery": [
+                "image1.jpg",
+                "image2.jpg",
+                "image3.jpg"
+            ]
+        }
+    }
+]
