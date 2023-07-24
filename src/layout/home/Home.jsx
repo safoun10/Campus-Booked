@@ -6,6 +6,8 @@ import { BsArrowRight } from "react-icons/bs";
 import { Tilt } from "react-tilt";
 
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import Search from "../../components/search/Search";
+import Three from "../../components/three/Three";
 
 const defaultOptions = {
 	reverse: false, // reverse the tilt direction
@@ -69,6 +71,8 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+			<Search></Search>
+			<Three></Three>
 		</div>
 	);
 };

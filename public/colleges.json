@@ -10,29 +10,232 @@
             "Orientation Day",
             "Annual Fest"
         ],
-        "researchHistory": "Founded in 1920",
+        "researchHistory": "MIT's research legacy since 1861 includes innovation, industry impact, and transformative contributions to academia and beyond.",
         "sports": [
             "Chess",
-            "Basketball"
+            "Basketball",
+            "Soccer"
         ],
-        "image": "mit.jpg",
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
         "details": {
-            "description": "MIT is a prestigious institution...",
-            "location": "Boston, Massachusetts",
+            "description": "MIT is a prestigious institution known for its cutting-edge research and exceptional education in the fields of science, engineering, and technology.",
+            "location": "Cambridge, Massachusetts",
             "facilities": [
                 "Library",
                 "Labs",
-                "Sports Complex"
+                "Sports Complex",
+                "Student Center"
             ],
             "courses": [
                 "Computer Science",
-                "Engineering",
-                "Biology"
+                "Electrical Engineering",
+                "Biological Engineering",
+                "Physics"
             ],
             "gallery": [
                 "image1.jpg",
                 "image2.jpg",
                 "image3.jpg"
+            ]
+        }
+    },
+    {
+        "college_id": "2",
+        "name": "Stanford University",
+        "admissionDates": [
+            "2023-09-01",
+            "2023-10-05"
+        ],
+        "events": [
+            "Freshman Orientation",
+            "Annual Research Symposium"
+        ],
+        "researchHistory": "Stanford's research excellence drives innovation and impacts diverse fields, shaping global perspectives and future leaders.",
+        "sports": [
+            "Swimming",
+            "Tennis",
+            "Track and Field"
+        ],
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
+        "details": {
+            "description": "Stanford University is a world-renowned research institution known for its exceptional programs in computer science, entrepreneurship, and biomedical engineering.",
+            "location": "Stanford, California",
+            "facilities": [
+                "Libraries",
+                "Laboratories",
+                "Recreational Center",
+                "Student Union"
+            ],
+            "courses": [
+                "Computer Science",
+                "Business Administration",
+                "Biomedical Engineering",
+                "Psychology"
+            ],
+            "gallery": [
+                "stanford_image1.jpg",
+                "stanford_image2.jpg",
+                "stanford_image3.jpg"
+            ]
+        }
+    },
+    {
+        "college_id": "3",
+        "name": "University of Oxford",
+        "admissionDates": [
+            "2023-09-20",
+            "2023-10-15"
+        ],
+        "events": [
+            "Freshers' Week",
+            "Oxford Literary Festival"
+        ],
+        "researchHistory": "Oxford's centuries-old research legacy influences disciplines, fosters critical inquiry, and nurtures scholarly leaders worldwide.",
+        "sports": [
+            "Rowing",
+            "Cricket",
+            "Rugby"
+        ],
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
+        "details": {
+            "description": "The University of Oxford is one of the oldest and most prestigious universities in the world, offering a wide range of academic disciplines and fostering a rich cultural and intellectual community.",
+            "location": "Oxford, England",
+            "facilities": [
+                "Libraries",
+                "Laboratories",
+                "Sports Complex",
+                "Student Union"
+            ],
+            "courses": [
+                "Law",
+                "Medicine",
+                "Economics",
+                "History"
+            ],
+            "gallery": [
+                "oxford_image1.jpg",
+                "oxford_image2.jpg",
+                "oxford_image3.jpg"
+            ]
+        }
+    },
+    {
+        "college_id": "4",
+        "name": "Harvard University",
+        "admissionDates": [
+            "2023-09-10",
+            "2023-10-15"
+        ],
+        "events": [
+            "Welcome Week",
+            "Harvard-Yale Football Game"
+        ],
+        "researchHistory": "Harvard's research legacy spans centuries, pioneering discoveries, and shaping the world's intellectual landscape across disciplines.",
+        "sports": [
+            "Football",
+            "Squash",
+            "Rowing"
+        ],
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
+        "details": {
+            "description": "Harvard University is a world-renowned Ivy League institution known for its excellence in various fields, including law, medicine, and business.",
+            "location": "Cambridge, Massachusetts",
+            "facilities": [
+                "Libraries",
+                "Laboratories",
+                "Athletic Center",
+                "Student Center"
+            ],
+            "courses": [
+                "Law",
+                "Medicine",
+                "Business Administration",
+                "Computer Science"
+            ],
+            "gallery": [
+                "harvard_image1.jpg",
+                "harvard_image2.jpg",
+                "harvard_image3.jpg"
+            ]
+        }
+    },
+    {
+        "college_id": "5",
+        "name": "Yale University",
+        "admissionDates": [
+            "2023-09-05",
+            "2023-10-01"
+        ],
+        "events": [
+            "Freshman Assembly",
+            "Yale Spring Fling"
+        ],
+        "researchHistory": "Yale's research heritage reflects interdisciplinary exploration, societal contributions, and fostering a tradition of lifelong learning.",
+        "sports": [
+            "Soccer",
+            "Lacrosse",
+            "Track and Field"
+        ],
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
+        "details": {
+            "description": "Yale University is an esteemed Ivy League institution with a rich academic tradition and a strong emphasis on liberal arts education.",
+            "location": "New Haven, Connecticut",
+            "facilities": [
+                "Libraries",
+                "Laboratories",
+                "Recreation Center",
+                "Student Union"
+            ],
+            "courses": [
+                "History",
+                "English",
+                "Biology",
+                "Political Science"
+            ],
+            "gallery": [
+                "yale_image1.jpg",
+                "yale_image2.jpg",
+                "yale_image3.jpg"
+            ]
+        }
+    },
+    {
+        "college_id": "6",
+        "name": "University of Cambridge",
+        "admissionDates": [
+            "2023-09-15",
+            "2023-10-10"
+        ],
+        "events": [
+            "Freshers' Fair",
+            "May Ball"
+        ],
+        "researchHistory": "Cambridge's research heritage spans centuries, driving innovation and advancing knowledge, impacting the world's intellectual horizon.",
+        "sports": [
+            "Cricket",
+            "Rowing",
+            "Tennis"
+        ],
+        "image": "https://i.postimg.cc/MKxZJpC1/wallpaperflare-com-wallpaper.jpg",
+        "details": {
+            "description": "The University of Cambridge is one of the oldest and most prestigious universities in the world, known for its rigorous academic programs and historic campus.",
+            "location": "Cambridge, England",
+            "facilities": [
+                "Libraries",
+                "Laboratories",
+                "Sports Complex",
+                "Student Union"
+            ],
+            "courses": [
+                "Mathematics",
+                "Natural Sciences",
+                "Economics",
+                "English"
+            ],
+            "gallery": [
+                "cambridge_image1.jpg",
+                "cambridge_image2.jpg",
+                "cambridge_image3.jpg"
             ]
         }
     }
