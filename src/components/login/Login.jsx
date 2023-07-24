@@ -1,19 +1,53 @@
 import React from "react";
 import "./Login.css";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+	const handleEmail = (e) => {
+		e.preventDefault();
+
+		const form = e.target;
+		const email = form.email.value;
+		const password = form.pass.value;
+
+		if (password.length < 6) {
+			toast("Your Password is too weak ! Feed it more !");
+			return;
+		} else {
+			console.log(email, password);
+		}
+
+		console.log(email, password);
+	};
+
 	return (
 		<div>
 			<div className="display-6 text-two text-center pb-5">
 				Login Your Account
 			</div>
-			<form className="d-flex flex-column gap-3 mb-4">
+			<form
+				onSubmit={handleEmail}
+				className="d-flex flex-column gap-3 mb-4"
+			>
 				<div>
-					<input className="input-login" type="email" required />
+					<input
+						placeholder="Your Email Here"
+						className="input-login"
+						name="email"
+						type="email"
+						required
+					/>
 				</div>
 				<div>
-					<input className="input-login" type="password" required />
+					<input
+						placeholder="Your Password Here"
+						className="input-login"
+						name="pass"
+						type="password"
+						required
+					/>
 				</div>
 				<div>
 					<input
@@ -50,6 +84,10 @@ const Login = () => {
 						></Player>
 					</span>{" "}
 				</div>
+			</div>
+			<div className="text-end mt-4">
+				Don&apos;t have an account ?{" "}
+				<Link to={"/register"}>Register Here</Link>
 			</div>
 		</div>
 	);
