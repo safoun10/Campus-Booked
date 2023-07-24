@@ -32,6 +32,7 @@ const Parallax = () => {
 				blossoming with curiosity, and spreading joy with every step
 				they take💖
 			</div>
+			<hr />
 		</div>
 	);
 };

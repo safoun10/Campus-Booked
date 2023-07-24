@@ -33,9 +33,7 @@
                 "Physics"
             ],
             "gallery": [
-                "image1.jpg",
-                "image2.jpg",
-                "image3.jpg"
+                "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg"
             ]
         }
     },
@@ -73,9 +71,7 @@
                 "Psychology"
             ],
             "gallery": [
-                "stanford_image1.jpg",
-                "stanford_image2.jpg",
-                "stanford_image3.jpg"
+                "https://images.pexels.com/photos/1184580/pexels-photo-1184580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ]
         }
     },
@@ -113,9 +109,7 @@
                 "History"
             ],
             "gallery": [
-                "oxford_image1.jpg",
-                "oxford_image2.jpg",
-                "oxford_image3.jpg"
+                "https://images.pexels.com/photos/7942550/pexels-photo-7942550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ]
         }
     },
@@ -153,9 +147,7 @@
                 "Computer Science"
             ],
             "gallery": [
-                "harvard_image1.jpg",
-                "harvard_image2.jpg",
-                "harvard_image3.jpg"
+                "https://images.pexels.com/photos/7713166/pexels-photo-7713166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ]
         }
     },
@@ -193,9 +185,7 @@
                 "Political Science"
             ],
             "gallery": [
-                "yale_image1.jpg",
-                "yale_image2.jpg",
-                "yale_image3.jpg"
+                "https://images.pexels.com/photos/7944124/pexels-photo-7944124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ]
         }
     },
@@ -233,9 +223,7 @@
                 "English"
             ],
             "gallery": [
-                "cambridge_image1.jpg",
-                "cambridge_image2.jpg",
-                "cambridge_image3.jpg"
+                "https://images.pexels.com/photos/7972711/pexels-photo-7972711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ]
         }
     }

@@ -6,7 +6,7 @@ const SinglePara = (college) => {
 		<div>
 			<div>
 				<div
-					style={{ backgroundImage: `url(${data.image})` }}
+					style={{ backgroundImage: `url(${data.details.gallery[0]})` }}
 					className="para d-flex justify-content-center align-items-center"
 				>
 					<div className="text-dark bg-white display-6 text-center text-two w-50">
@@ -14,7 +14,7 @@ const SinglePara = (college) => {
 					</div>
 				</div>
 			</div>
-            <hr />
+			<hr />
 		</div>
 	);
 };

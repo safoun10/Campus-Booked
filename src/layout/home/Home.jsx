@@ -9,6 +9,7 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Search from "../../components/search/Search";
 import Three from "../../components/three/Three";
 import Parallax from "../../components/parallax/Parallax";
+import Research from "../../components/research/Research";
 
 const defaultOptions = {
 	reverse: false, // reverse the tilt direction
@@ -75,6 +76,7 @@ const Home = () => {
 			<Search></Search>
 			<Three></Three>
 			<Parallax></Parallax>
+			<Research></Research>
 		</div>
 	);
 };
