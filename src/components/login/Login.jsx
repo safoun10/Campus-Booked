@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Login.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { getAuth, signInWithPopup } from "firebase/auth";
+import { AuthContext } from "../../provider/AuthProvider";
 
+const auth = getAuth();
 const Login = () => {
+	const { loginUser, GoogleProvider } = useContext(AuthContext);
+
+	const navigate = useNavigate();
+	const location = useLocation();
+	const from = location.state?.from?.pathname || "/home";
+
 	const handleEmail = (e) => {
 		e.preventDefault();
 
@@ -16,10 +25,28 @@ const Login = () => {
 			toast("Your Password is too weak ! Feed it more !");
 			return;
 		} else {
-			console.log(email, password);
+			loginUser(email, password)
+				.then((res) => {
+					toast("Welcome Back !!");
+					form.email.value = "";
+					form.pass.value = "";
+					navigate(from, { replace: true });
+				})
+				.catch((error) => {
+					toast.error(error.message);
+				});
 		}
+	};
 
-		console.log(email, password);
+    const handleGoogleSignIn = () => {
+		signInWithPopup(auth, GoogleProvider)
+			.then(() => {
+				toast("You have successfully signed in with Google !!");
+				navigate(from, { replace: true });
+			})
+			.catch((err) => {
+				toast.error(err.message);
+			});
 	};
 
 	return (
@@ -61,7 +88,7 @@ const Login = () => {
 			<div className="mt-3">
 				<div className="display-5 text-two d-flex align-items-center justify-content-between">
 					Or you can try{" "}
-					<span className="social">
+					<span onClick={handleGoogleSignIn} className="social">
 						<Player
 							autoplay
 							loop

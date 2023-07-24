@@ -6,7 +6,7 @@ const Parallax = () => {
 	const [colleges, setColleges] = useState([]);
 
 	useEffect(() => {
-		fetch("colleges.json")
+		fetch("https://campus-booked-server.vercel.app/colleges")
 			.then((res) => res.json())
 			.then((data) => setColleges(data));
 	}, []);
@@ -28,8 +28,8 @@ const Parallax = () => {
 			</div>
 			<div className="text-center display-6 text-two pb-5">
 				Happy students radiate like sunflowers, thriving in the warmth
-				of <span className="bg-warning px-2 text-white">knowledge</span>,
-				blossoming with curiosity, and spreading joy with every step
+				of <span className="bg-warning px-2 text-white">knowledge</span>
+				, blossoming with curiosity, and spreading joy with every step
 				they take💖
 			</div>
 			<hr />

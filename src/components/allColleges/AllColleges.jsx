@@ -5,7 +5,7 @@ const AllColleges = () => {
 	const [colleges, setColleges] = useState([]);
 
 	useEffect(() => {
-		fetch("colleges.json")
+		fetch("https://campus-booked-server.vercel.app/colleges")
 			.then((res) => res.json())
 			.then((data) => setColleges(data));
 	}, []);

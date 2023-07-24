@@ -3,34 +3,28 @@ import { Link } from "react-router-dom";
 
 const SingleCollege = (college) => {
 	const data = college.college;
-    
-	const {
-		college_id,
-		name,
-		admissionDates,
-		researchHistory,
-		image,
-	} = data;
 
+	const { college_id, name, admissionDates, researchHistory, image } = data;
 
-    const [reviews, setReviews] = useState([]);
+	const [reviews, setReviews] = useState([]);
 
 	useEffect(() => {
-		fetch("review.json")
+		fetch("https://campus-booked-server.vercel.app/review")
 			.then((res) => res.json())
 			.then((data) => {
-                const real_data = data.filter((single) => single?.college_id === college_id );
-                setReviews(real_data)
-            });
+				const real_data = data.filter(
+					(single) => single?.college_id === college_id
+				);
+				setReviews(real_data);
+			});
 	}, [college_id]);
 
-    const review_num = reviews?.reduce(
+	const review_num = reviews?.reduce(
 		(sum, obj) => sum + parseInt(obj?.rating),
 		0
 	);
-    const review_length = reviews?.length;
-    const avg_review = parseInt(review_num / review_length);
-
+	const review_length = reviews?.length;
+	const avg_review = parseInt(review_num / review_length);
 
 	return (
 		<div className="col-11 col-md-6 mx-auto">
@@ -60,7 +54,7 @@ const SingleCollege = (college) => {
 							Research History : {researchHistory}
 						</div>
 					</div>
-                    <div>Rating : {avg_review}</div>
+					<div>Rating : {avg_review}</div>
 				</div>
 				<div>
 					<Link className="text-decoration-none btn w-100 details">

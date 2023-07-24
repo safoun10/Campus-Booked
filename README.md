@@ -2,4 +2,4 @@
 
 This is College booking site that features MERN stack
 
-- Live link : [College Booked](https://college-booked.web.app/)
+- Live link : [Campus Booked](https://campus-booked.web.app/)

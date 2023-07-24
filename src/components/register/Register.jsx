@@ -1,9 +1,20 @@
 import { Player } from "@lottiefiles/react-lottie-player";
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { AuthContext } from "../../provider/AuthProvider";
+import { getAuth, signInWithPopup } from "firebase/auth";
 
+const auth = getAuth();
 const Register = () => {
+
+    const { createUser, GoogleProvider, updateUserProfile } =
+		useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const location = useLocation();
+	const from = location.state?.from?.pathname || "/home";
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
@@ -17,8 +28,31 @@ const Register = () => {
 			toast("Your Password is too weak ! Feed it more !");
 			return;
 		} else {
-			console.log(email, password, name, photo);
+			createUser(email, password)
+				.then((res) => {
+                    updateUserProfile(name, photo)
+					toast("Account created successfully");
+                    form.text.value = "";
+					form.email.value = "";
+					form.url.value = "";
+					form.pass.value = "";
+					navigate("/home");
+				})
+				.catch((error) => {
+                    navigate("/home");
+				});
 		}
+	};
+
+    const handleGoogleSignIn = () => {
+		signInWithPopup(auth, GoogleProvider)
+			.then(() => {
+				toast("You have successfully signed in with Google !!");
+				navigate(from, { replace: true });
+			})
+			.catch((err) => {
+				toast.error(err.message);
+			});
 	};
 
 	return (
@@ -78,7 +112,7 @@ const Register = () => {
 			<div className="mt-3">
 				<div className="display-5 text-two d-flex align-items-center justify-content-between">
 					Or you can try{" "}
-					<span className="social">
+					<span onClick={handleGoogleSignIn} className="social">
 						<Player
 							autoplay
 							loop

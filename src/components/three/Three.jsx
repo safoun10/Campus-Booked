@@ -5,7 +5,7 @@ const Three = () => {
 	const [colleges, setColleges] = useState([]);
 
 	useEffect(() => {
-		fetch("colleges.json")
+		fetch("https://campus-booked-server.vercel.app/colleges")
 			.then((res) => res.json())
 			.then((data) => {
 				const useable_data = data.slice(0, 4);

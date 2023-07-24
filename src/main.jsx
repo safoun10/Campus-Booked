@@ -10,6 +10,8 @@ import Register from "./components/register/Register";
 import Colleges from "./layout/colleges/Colleges";
  import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import AuthProvider from "./provider/AuthProvider";
+import Admission from "./layout/admission/Admission";
 
 const router = createBrowserRouter([
 	{
@@ -37,12 +39,18 @@ const router = createBrowserRouter([
   {
     path : "colleges",
     element : <Colleges></Colleges>
+  },
+  {
+    path : "admission",
+    element : <Admission></Admission>
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
-		<ToastContainer />
+		<AuthProvider>
+			<RouterProvider router={router} />
+			<ToastContainer />
+		</AuthProvider>
 	</React.StrictMode>
 );

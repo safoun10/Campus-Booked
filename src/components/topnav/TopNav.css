@@ -20,16 +20,32 @@
 	background-color: #ffffff17;
 }
 
-.active{
-    color: #fff !important;
-    font-size: larger;
+.active {
+	color: #fff !important;
+	font-size: larger;
 	font-weight: 900;
 }
 
-.camp{
+.camp {
 	color: #ffffff9e;
 }
 
-.text-shadow{
+.text-shadow {
 	text-shadow: 0 0 10px #000;
+}
+
+.logout-btn {
+	font-size: 20px;
+	color: white;
+	padding: 6px 25px;
+	border: 3px solid transparent;
+}
+
+.logout-btn:hover {
+	color: white;
+}
+
+.user-img {
+	width: 50px;
+	border-radius: 50%;
 }
