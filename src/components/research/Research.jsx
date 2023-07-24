@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Research.css"
 
 const Research = () => {
     return (
@@ -17,9 +18,9 @@ const Research = () => {
 				<div className="col-11 col-md-6 mx-auto mb-3">
 					<div className="rounded-4 border-2 card p-4">
 						<img
-							src="https://i.postimg.cc/T1XTXFq3/istockphoto-1496540890-612x612.jpg"
+							src="https://i.postimg.cc/brnqKPWv/istockphoto-1496308715-612x612.jpg"
 							alt="img"
-							className="img-fluid rounded-4"
+							className="img-fluid rounded-4 research-img"
 						/>
 						<hr />
 						<div className="text-two">
@@ -45,7 +46,7 @@ const Research = () => {
 						<img
 							src="https://i.postimg.cc/T1XTXFq3/istockphoto-1496540890-612x612.jpg"
 							alt="img"
-							className="img-fluid rounded-4"
+							className="img-fluid rounded-4 research-img"
 						/>
 						<hr />
 						<div className="text-two">
@@ -70,9 +71,9 @@ const Research = () => {
 				<div className="col-11 col-md-6 mx-auto mb-3">
 					<div className="rounded-4 border-2 card p-4">
 						<img
-							src="https://i.postimg.cc/T1XTXFq3/istockphoto-1496540890-612x612.jpg"
+							src="https://i.postimg.cc/GmzwH91D/istockphoto-1442932534-612x612.jpg"
 							alt="img"
-							className="img-fluid rounded-4"
+							className="img-fluid rounded-4 research-img"
 						/>
 						<hr />
 						<div className="text-two">
@@ -96,9 +97,9 @@ const Research = () => {
 				<div className="col-11 col-md-6 mx-auto mb-3">
 					<div className="rounded-4 border-2 card p-4">
 						<img
-							src="https://i.postimg.cc/T1XTXFq3/istockphoto-1496540890-612x612.jpg"
+							src="https://i.postimg.cc/GhVbb4dm/istockphoto-1409231316-612x612.jpg"
 							alt="img"
-							className="img-fluid rounded-4"
+							className="img-fluid rounded-4 research-img"
 						/>
 						<hr />
 						<div className="text-two">

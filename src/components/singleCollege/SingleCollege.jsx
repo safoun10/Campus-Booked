@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SingleCollege = (college) => {
 	const data = college.college;
 
-	const { college_id, name, admissionDates, researchHistory, image } = data;
+	const { _id , college_id, name, admissionDates, researchHistory, image } = data;
 
 	const [reviews, setReviews] = useState([]);
 
@@ -57,7 +57,10 @@ const SingleCollege = (college) => {
 					<div>Rating : {avg_review}</div>
 				</div>
 				<div>
-					<Link className="text-decoration-none btn w-100 details">
+					<Link
+						to={`/colleges/${_id}`}
+						className="text-decoration-none btn w-100 details"
+					>
 						Details
 					</Link>
 				</div>

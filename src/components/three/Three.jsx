@@ -13,8 +13,6 @@ const Three = () => {
 			});
 	}, []);
 
-	console.log(colleges);
-
 	return (
 		<div className="mx-auto my-5" style={{ maxWidth: "1200px" }}>
 			<div className="py-4">
