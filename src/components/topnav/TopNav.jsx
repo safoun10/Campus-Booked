@@ -26,8 +26,8 @@ const TopNav = () => {
 						to={"/"}
 						className={
 							pathName == "/home"
-								? "text-decoration-none text-white active"
-								: "text-decoration-none text-white"
+								? "text-decoration-none text-white text-shadow active"
+								: "text-decoration-none text-white text-shadow"
 						}
 					>
 						Home
@@ -36,21 +36,24 @@ const TopNav = () => {
 						to={"/colleges"}
 						className={
 							pathName == "/colleges"
-								? "text-decoration-none text-white active"
-								: "text-decoration-none text-white"
+								? "text-decoration-none text-white text-shadow active"
+								: "text-decoration-none text-white text-shadow"
 						}
 					>
 						Colleges
 					</Link>
-					<Link className="text-decoration-none text-white">
+					<Link className="text-decoration-none text-white text-shadow">
 						Admission
 					</Link>
-					<Link className="text-decoration-none text-white">
+					<Link className="text-decoration-none text-white text-shadow">
 						My College
 					</Link>
 				</div>
 				<div>
-					<Link className="text-decoration-none btn login-btn">
+					<Link
+						to={"/login"}
+						className="text-decoration-none btn login-btn"
+					>
 						Login
 					</Link>
 				</div>

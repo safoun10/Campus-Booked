@@ -24,9 +24,12 @@
     color: #fff !important;
     font-size: larger;
 	font-weight: 900;
-	text-shadow: 0 0 10px #000;
 }
 
 .camp{
 	color: #ffffff9e;
+}
+
+.text-shadow{
+	text-shadow: 0 0 10px #000;
 }
