@@ -9,7 +9,7 @@ const SinglePara = (college) => {
 					style={{ backgroundImage: `url(${data.details.gallery[0]})` }}
 					className="para d-flex justify-content-center align-items-center"
 				>
-					<div className="text-dark bg-white display-6 text-center text-two w-50">
+					<div className="text-white display-6 text-center text-two w-50">
 						{data.name}
 					</div>
 				</div>
