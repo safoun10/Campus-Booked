@@ -67,17 +67,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 			<ToastContainer />
 		</AuthProvider>
 	</React.StrictMode>
-);
-
-
-//   `/college/${id}`
-
-/**
-    useEffect(() => {
-		const selectChef = info.find((chef) => (chef.id == ID.ID));
-        setChef(selectChef);
-		const iterableRecipes = selectChef.view_recipes;
-		setRecipes(iterableRecipes);
-	}, []);
-
- * */ 
+)

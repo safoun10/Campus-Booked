@@ -6,7 +6,7 @@ const SingleCollegeHome = (college) => {
 	const data = college.college;
 
 	const {
-		college_id,
+		_id,
 		name,
 		admissionDates,
 		events,
@@ -60,7 +60,10 @@ const SingleCollegeHome = (college) => {
 					</div>
 				</div>
 				<div>
-					<Link className="text-decoration-none btn w-100 details">
+					<Link
+						to={`/colleges/${_id}`}
+						className="text-decoration-none btn w-100 details"
+					>
 						Details
 					</Link>
 				</div>
