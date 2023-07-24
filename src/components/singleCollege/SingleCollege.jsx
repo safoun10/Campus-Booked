@@ -1,19 +1,36 @@
-import React from "react";
-import "./SingleCollegeHome.css";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const SingleCollegeHome = (college) => {
+const SingleCollege = (college) => {
 	const data = college.college;
-
+    
 	const {
 		college_id,
 		name,
 		admissionDates,
-		events,
 		researchHistory,
-		sports,
 		image,
 	} = data;
+
+
+    const [reviews, setReviews] = useState([]);
+
+	useEffect(() => {
+		fetch("review.json")
+			.then((res) => res.json())
+			.then((data) => {
+                const real_data = data.filter((single) => single?.college_id === college_id );
+                setReviews(real_data)
+            });
+	}, [college_id]);
+
+    const review_num = reviews?.reduce(
+		(sum, obj) => sum + parseInt(obj?.rating),
+		0
+	);
+    const review_length = reviews?.length;
+    const avg_review = parseInt(review_num / review_length);
+
 
 	return (
 		<div className="col-11 col-md-6 mx-auto">
@@ -26,7 +43,7 @@ const SingleCollegeHome = (college) => {
 					/>
 				</div>
 				<hr />
-				<div className="box-text">
+				<div className="box-text-card">
 					<div>
 						<div className="text-two fs-3 text-secondary">
 							{name}
@@ -38,26 +55,12 @@ const SingleCollegeHome = (college) => {
 						<span className="fw-bold">{admissionDates[0]}</span> to{" "}
 						<span className="fw-bold">{admissionDates[1]}</span>
 					</div>
-					<div className="d-flex align-items-center my-3 gap-2">
-						<div>Events :</div>
-						<div className="d-flex gap-3 flex-wrap">
-							<span className="event">{events[0]}</span>
-							<span className="event">{events[1]}</span>
-						</div>
-					</div>
-					<div className="d-flex align-items-center my-3 gap-2">
-						<div>Sports :</div>
-						<div className="d-flex gap-3 flex-wrap">
-							<span className="event">{sports[0]}</span>
-							<span className="event">{sports[1]}</span>
-							<span className="event">{sports[2]}</span>
-						</div>
-					</div>
 					<div>
 						<div className="fw-bold">
 							Research History : {researchHistory}
 						</div>
 					</div>
+                    <div>Rating : {avg_review}</div>
 				</div>
 				<div>
 					<Link className="text-decoration-none btn w-100 details">
@@ -69,4 +72,4 @@ const SingleCollegeHome = (college) => {
 	);
 };
 
-export default SingleCollegeHome;
+export default SingleCollege;

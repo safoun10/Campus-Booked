@@ -22,5 +22,9 @@
 }
 
 .box-text {
-	height: 340px;
+	height: 280px;
+}
+
+.box-text-card{
+	height: 190px;
 }

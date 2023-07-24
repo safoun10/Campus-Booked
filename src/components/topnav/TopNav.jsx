@@ -1,8 +1,12 @@
 import React from "react";
 import "./TopNav.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const TopNav = () => {
+
+	const location = useLocation();
+	const pathName = location.pathname;
+
 	return (
 		<div className="d-flex justify-content-between align-items-center py-3 px-5 topnav">
 			<div className="d-flex gap-3">
@@ -18,10 +22,24 @@ const TopNav = () => {
 			</div>
 			<div className="d-flex justify-content-between align-items-center gap-5">
 				<div className="d-flex fs-4 gap-3 align-items-center">
-					<Link className="text-decoration-none text-white active">
+					<Link
+						to={"/"}
+						className={
+							pathName == "/home"
+								? "text-decoration-none text-white active"
+								: "text-decoration-none text-white"
+						}
+					>
 						Home
 					</Link>
-					<Link className="text-decoration-none text-white">
+					<Link
+						to={"/colleges"}
+						className={
+							pathName == "/colleges"
+								? "text-decoration-none text-white active"
+								: "text-decoration-none text-white"
+						}
+					>
 						Colleges
 					</Link>
 					<Link className="text-decoration-none text-white">

@@ -21,11 +21,12 @@
 }
 
 .active{
-    text-decoration: underline;
-    color: #2c4f1e !important;
+    color: #fff !important;
     font-size: larger;
+	font-weight: 900;
+	text-shadow: 0 0 10px #000;
 }
 
 .camp{
-	color: #2c4f1e;
+	color: #ffffff9e;
 }

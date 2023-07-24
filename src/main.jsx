@@ -7,6 +7,7 @@ import Auth from "./layout/auth/Auth";
 import Home from "./layout/home/Home";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import Colleges from "./layout/colleges/Colleges";
 
 const router = createBrowserRouter([
 	{
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path : "home",
     element : <Home></Home>
+  },
+  {
+    path : "colleges",
+    element : <Colleges></Colleges>
   }
 ]);
 
